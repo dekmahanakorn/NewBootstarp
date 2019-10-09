@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test';
+  changeLang(lang: string) {
+
+    if (lang === 'th') {
+      localStorage.setItem('locale', 'th');
+    }
+
+    if (lang === 'en') {
+      localStorage.setItem('locale', 'en');
+    }
+  }
 }
